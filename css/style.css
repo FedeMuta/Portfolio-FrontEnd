@@ -1,0 +1,62 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: 04724D;
+    height: 7.3%;
+}
+
+#logo_ap {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo_inti {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo_ig {
+    filter: invert(100%);
+    margin: 1% 0.7%;
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo_git {
+    filter: invert(100%);
+    margin: 1% 0.7%;
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo_gm {
+    filter: invert(100%);
+    margin: 1% 0.7%;
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo_wh {
+    filter: invert(100%);
+    margin: 1% 0.7%;
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
+
+#logo_in {
+    filter: invert(100%);
+    padding-left: 5%;
+    margin: 0.5% 0%;
+    height: 70%;
+    width: auto;
+    object-fit: contain;
+}
