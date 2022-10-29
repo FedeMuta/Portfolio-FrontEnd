@@ -8,43 +8,13 @@ header {
     height: 7.3%;
 }
 
-#logo_ap {
+#logo_ap, #logo_inti {
     height: 100%;
     width: auto;
     object-fit: contain;
 }
 
-#logo_inti {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-}
-
-#logo_ig {
-    filter: invert(100%);
-    margin: 1% 0.7%;
-    height: 50%;
-    width: auto;
-    object-fit: contain;
-}
-
-#logo_git {
-    filter: invert(100%);
-    margin: 1% 0.7%;
-    height: 50%;
-    width: auto;
-    object-fit: contain;
-}
-
-#logo_gm {
-    filter: invert(100%);
-    margin: 1% 0.7%;
-    height: 50%;
-    width: auto;
-    object-fit: contain;
-}
-
-#logo_wh {
+#logo_ig,#logo_git, #logo_gm, #logo_wh {
     filter: invert(100%);
     margin: 1% 0.7%;
     height: 50%;
