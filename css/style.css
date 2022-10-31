@@ -64,35 +64,64 @@ header {
 }
 
 #acercade {
+  padding: 0%;
   background-color: F4F4F9;
 }
 
+/* CONTENIDO ACERCA DE */
+
+#ubicacion {
+  display: flex;
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-color: 586F7C;
+  align-items: center;
+}
+
+iframe {
+  box-shadow: 2vh -2vh 2px teal;
+  width: auto;
+  height: 40vh;
+  margin-left: 40%;
+}
+
 #experiencia {
-  overflow: hidden;
   background-color: 04724D;
-  padding: 18vh 10vh;
+  padding: 15vh 10vh;
 }
 
 /* CONTENIDO EXPERIENCIA */
 
 .card {
+  width: auto;
+  box-shadow: 2vh -2vh 2px teal;
   background-color: F4F4F9;
-  overflow: hidden;
+  margin: 5px;
 }
 
-.card-img-top {
-  width: 30vh;
+.img-fluid {
+  width: 20vh;
   height: auto;
-  transition: width 2s;
+  transition: width 1s;
 }
 
-.card-img-top:hover {
-  width: 33vh;
+.img-fluid:hover {
+  width: 25vh;
   height: auto;
 }
 
 .accordion-button {
+  display: flex;
   background-color: F4F4F9;
+  overflow: auto;
+}
+
+.accordion-collapse {
+  display: flex;
+  overflow-y: scroll;
+  background-color: F4F4F9;
+  max-height: 40vh;
 }
 
 .accordion {
