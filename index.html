@@ -2,134 +2,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Agregando fuente de Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Enlazando hoja de estilos externa -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio</title>
   </head>
   <body>
     <header>
-      <div class="container-fluid">
-        <a
-          href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
-          target="_blank"
-          ><img
-            id="logo_ap"
-            class="img-fluid float-start"
-            src="img/APLogo-20-20.png"
-            alt="logo argentina programa"
-        /></a>
-        <img
-          id="logo_inti"
-          class="img-fluid"
-          src="img/LogosInti.png"
-          alt="logo inti"
-          usemap="#image-map"
-        />
-        <map name="image-map">
-          <area
+      <div class="container-fluid header">
+        <div class="logo-group">
+          <a
+            href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
             target="_blank"
-            alt="inti"
-            title="inti"
-            href="https://www.inti.gob.ar/"
-            coords="50,60,0,0"
-            shape="rect"
+          >
+            <img
+              id="logo_ap"
+              class="img-fluid"
+              src="img/APLogo-20-20.png"
+              alt="logo argentina programa"
+          /></a>
+          <img
+            id="logo_inti"
+            class="img-fluid"
+            src="img/LogosInti.png"
+            alt="logo inti"
+            usemap="#image-map"
           />
-          <area
+          <map name="image-map">
+            <area
+              target="_blank"
+              alt="inti"
+              title="inti"
+              href="https://www.inti.gob.ar/"
+              coords="50,60,0,0"
+              shape="rect"
+            />
+            <area
+              target="_blank"
+              alt="ministerio de produccion"
+              title="ministerio de produccion"
+              href="https://www.argentina.gob.ar/produccion"
+              coords="200,50,0,0"
+              shape="rect"
+            />
+          </map>
+        </div>
+        <div class="icon-group">
+          <a href="https://www.instagram.com/fede.muta/" target="_blank">
+            <img
+              id="logo_ig"
+              class="img-fluid"
+              src="img/bxl-instagram.svg"
+              alt="logo instagram"
+            />
+          </a>
+          <a href="https://github.com/FedeMuta" target="_blank">
+            <img
+              id="logo_git"
+              class="img-fluid"
+              src="img/bxl-github.svg"
+              alt="logo github"
+            />
+          </a>
+          <a href="mailto: fedemuta@gmail.com" target="_blank">
+            <img
+              id="logo_gm"
+              class="img-fluid"
+              src="img/bxl-gmail.svg"
+              alt="logo gmail"
+            />
+          </a>
+          <a
+            href="https://web.whatsapp.com/send?phone=54911******87"
             target="_blank"
-            alt="ministerio de produccion"
-            title="ministerio de produccion"
-            href="https://www.argentina.gob.ar/produccion"
-            coords="200,50,0,0"
-            shape="rect"
+          >
+            <img
+              id="logo_wh"
+              class="img-fluid"
+              src="img/bxl-whatsapp.svg"
+              alt="logo whatsapp"
+            />
+          </a>
+          <img
+            id="logo_in"
+            class="img-fluid"
+            src="img/bxs-log-in.svg"
+            alt="logo login"
           />
-        </map>
-        <img
-          id="logo_in"
-          class="img-fluid float-end"
-          src="img/bxs-log-in.svg"
-          alt="logo login"
-        />
-        <a
-          href="https://web.whatsapp.com/send?phone=54911******87"
-          target="_blank"
-          ><img
-            id="logo_wh"
-            class="img-fluid float-end"
-            src="img/bxl-whatsapp.svg"
-            alt="logo whatsapp"
-        /></a>
-        <a href="mailto: fedemuta@gmail.com" target="_blank"
-          ><img
-            id="logo_gm"
-            class="img-fluid float-end"
-            src="img/bxl-gmail.svg"
-            alt="logo gmail"
-        /></a>
-        <a href="https://github.com/FedeMuta" target="_blank"
-          ><img
-            id="logo_git"
-            class="img-fluid float-end"
-            src="img/bxl-github.svg"
-            alt="logo github"
-        /></a>
-        <a href="https://www.instagram.com/fede.muta/" target="_blank"
-          ><img
-            id="logo_ig"
-            class="img-fluid float-end"
-            src="img/bxl-instagram.svg"
-            alt="logo instagram"
-        /></a>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section id="banner">
         <div id="banner" class="container-fluid main"></div>
       </section>
-      <section>
-        <div id="acercade" class="container-fluid main">
-          <div class="row">
-            <div class="col">
-              <div class="ratio ratio-1x1 container">
+      <section id="acercade">
+        <div class="container-fluid acercade" id="acercade">
+          <div class="left" data-aos="fade-right">
+            <div class="profile-image" data-aos="zoom-in">
+              <img src="img/foto-perfil.jpg" alt="foto de perfil" />
+            </div>
+            <div class="profile-text">
+              <h2>Federico Leal</h2>
+              <p>Tu descripción</p>
+            </div>
+          </div>
+          <div class="right" data-aos="fade-left">
+            <div class="location">
+              <div class="country-image">
                 <img
-                  src="img/foto-perfil.jpg"
-                  alt="Foto de perfil"
-                  class="img-fluid rounded-circle overflow-hidden"
-                  id="perfpic"
-                  data-aos="fade-down-right"
+                  src="img/argentina-256x256.png"
+                  alt="Silueta pais Argentina"
                 />
               </div>
+              <div class="country-info" data-aos="flip-right">
+                <h3>Buenos Aires</h3>
+                <p>Argentina</p>
+                <p>Cp: 1440</p>
+              </div>
             </div>
-            <div id="ubicacion" class="col" data-aos="zoom-out">
-              <img
-                src="img/argentina-256x256.png"
-                alt="silueta de argentina"
-                id="argentina"
-                class="img-fluid"
-                data-aos="flip-up"
-              />
+            <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44367063188!2d-58.50333835919988!3d-34.61566245792793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1666573035671!5m2!1ses!2sar"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                data-aos="flip-right"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
               ></iframe>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div id="experiencia" class="container-fluid main">
-          <!--aca arrancan las tarjetas-->
-          <div class="row row-cols-1 row-cols-3 g-4">
-            <!--empieza tarjeta 1-->
-            <div class="col" data-aos="fade-right">
+      <section id="experiencia">
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col">
               <div class="card">
                 <button
                   class="btn"
@@ -148,7 +173,7 @@
                   </center>
                 </button>
                 <div class="card-body">
-                  <!--aca arranca el acordeon 1-->
+                  <!-- Acordeón 1 -->
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
@@ -186,20 +211,20 @@
                       </div>
                     </div>
                   </div>
-                  <!--cierra el acordeon 1-->
+                  <!-- Cierra acordeón 1 -->
                 </div>
               </div>
             </div>
-            <!--cierra tarjeta 1-->
-            <div class="col" data-aos="fade-down">
+            <!-- Tarjeta 2 -->
+            <div class="col">
               <div class="card">
                 <button
                   class="btn"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOneCard2"
+                  data-bs-target="#collapseTwo"
                   aria-expanded="true"
-                  aria-controls="collapseOneCard2"
+                  aria-controls="collapseTwo"
                 >
                   <center>
                     <img
@@ -210,30 +235,30 @@
                   </center>
                 </button>
                 <div class="card-body">
-                  <!--aca arranca el acordeon 2-->
+                  <!-- Acordeón 2 -->
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
+                      <h2 class="accordion-header" id="headingTwo">
                         <button
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseOneCard2"
+                          data-bs-target="#collapseTwo"
                           aria-expanded="true"
-                          aria-controls="collapseOneCard2"
+                          aria-controls="collapseTwo"
                         >
-                          Accordion Item #1
+                          Accordion Item #2
                         </button>
                       </h2>
                       <div
-                        id="collapseOneCard2"
+                        id="collapseTwo"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingOne"
+                        aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
                         <div class="accordion-body">
                           <strong
-                            >This is the first item's accordion body.</strong
+                            >This is the second item's accordion body.</strong
                           >
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
@@ -248,53 +273,53 @@
                       </div>
                     </div>
                   </div>
-                  <!--cierra el acordeon 2-->
                 </div>
               </div>
             </div>
-            <div class="col" data-aos="fade-left">
+            <!-- Tarjeta acordeón 3 -->
+            <div class="col">
               <div class="card">
                 <button
                   class="btn"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOneCard3"
+                  data-bs-target="#collapseThree"
                   aria-expanded="true"
-                  aria-controls="collapseOneCard3"
+                  aria-controls="collapseThree"
                 >
                   <center>
                     <img
                       src="img/logo sr.jpg"
                       class="img-fluid exp"
-                      alt="..."
+                      alt="Logo 3"
                     />
                   </center>
                 </button>
                 <div class="card-body">
-                  <!--aca arranca el acordeon 3-->
-                  <div class="accordion" id="accordionExample">
+                  <!-- Acordeón 3 -->
+                  <div class="accordion" id="accordionThree">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
+                      <h2 class="accordion-header" id="headingThree">
                         <button
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseOneCard3"
+                          data-bs-target="#collapseThree"
                           aria-expanded="true"
-                          aria-controls="collapseOneCard3"
+                          aria-controls="collapseThree"
                         >
-                          Accordion Item #1
+                          Accordion Item #3
                         </button>
                       </h2>
                       <div
-                        id="collapseOneCard3"
+                        id="collapseThree"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionThree"
                       >
                         <div class="accordion-body">
                           <strong
-                            >This is the first item's accordion body.</strong
+                            >This is the third item's accordion body.</strong
                           >
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
@@ -309,22 +334,142 @@
                       </div>
                     </div>
                   </div>
-                  <!--cierra el acordeon 3-->
+                  <!-- Fin acordeón 3 -->
                 </div>
               </div>
             </div>
           </div>
-          <!--cierran las trjetas-->
         </div>
       </section>
-      <section>
-        <div id="educacion" class="container-fluid main"></div>
+      <section id="estudios">
+        <div class="container-fluid estudios">
+          <h2>Mis estudios</h2>
+          <center>
+            <div class="row">
+              <!-- Aquí irán los bloques de información de cada estudio -->
+              <div class="col-md-6">
+                <div class="estudio">
+                  <img src="ruta/a/imagen.jpg" alt="Estudio 1" />
+                  <h3>Nombre del lugar de estudio</h3>
+                  <p>Detalles sobre los estudios cursados</p>
+                  <p>Fecha de inicio - Fecha de finalización</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="estudio">
+                  <img src="ruta/a/imagen.jpg" alt="Estudio 2" />
+                  <h3>Nombre del lugar de estudio</h3>
+                  <p>Detalles sobre los estudios cursados</p>
+                  <p>Fecha de inicio - Fecha de finalización</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="estudio">
+                  <img src="ruta/a/imagen.jpg" alt="Estudio 3" />
+                  <h3>Nombre del lugar de estudio</h3>
+                  <p>Detalles sobre los estudios cursados</p>
+                  <p>Fecha de inicio - Fecha de finalización</p>
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
       </section>
-      <section>
-        <div id="skills" class="container-fluid main"></div>
+      <section id="skills" class="bg-light">
+        <div class="container-fluid skills py-5">
+          <h2 class="text-center mb-5">Skills</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="text-secondary mb-3">Habilidades Blandas</h4>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Comunicación
+                </div>
+              </div>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Resolución de conflictos
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-secondary mb-3">Habilidades Duras</h4>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Desarrollo Web
+                </div>
+              </div>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Análisis de Datos
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div id="proyectos" class="container-fluid main"></div>
+      <section id="proyectos" class="bg-color">
+        <div class="container">
+          <h2 class="text-center">Proyectos</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-up">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/350x200"
+                  class="card-img-top"
+                  alt="Proyecto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto 1</h5>
+                  <p class="card-text">Descripción del proyecto 1</p>
+                  <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-up">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/350x200"
+                  class="card-img-top"
+                  alt="Proyecto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Proyecto 2</h5>
+                  <p class="card-text">Descripción del proyecto 2</p>
+                  <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
@@ -336,7 +481,7 @@
     ></script>
     <script>
       AOS.init({
-        duration: 1200,
+        duration: 800,
       });
     </script>
   </body>

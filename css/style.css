@@ -14,12 +14,26 @@ html {
   scrollbar-width: none;
 }
 
+/* header */
+
 header {
-  background-color: 04724D;
-  height: 7.3vh;
+  background-color: #04724d;
 }
 
 /* logos header */
+.container-fluid.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.3vh;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  filter: invert(100%);
+  object-fit: contain;
+}
 
 #logo_ap,
 #logo_inti {
@@ -32,20 +46,13 @@ header {
 #logo_git,
 #logo_gm,
 #logo_wh {
-  filter: invert(100%);
-  margin: 1% 0.7%;
-  height: 50%;
-  width: auto;
-  object-fit: contain;
+  margin: 1vh;
+  height: 3.6vh;
 }
 
 #logo_in {
-  filter: invert(100%);
-  padding-left: 5%;
-  margin: 0.5% 0%;
-  height: 70%;
-  width: auto;
-  object-fit: contain;
+  height: 5vh;
+  margin-left: 3vh;
 }
 
 /* MAIN */
@@ -53,7 +60,7 @@ header {
 .container-fluid.main {
   width: 100%;
   height: 100vh;
-  scroll-snap-align: end;
+  /*scroll-snap-align: end;*/
   overflow: hidden;
 }
 
@@ -62,52 +69,115 @@ header {
   height: 92.7%;
 }
 
+/* acercade */
+
 #acercade {
+  display: flex;
   padding: 0%;
-  background-color: F4F4F9;
-}
-
-/* CONTENIDO ACERCA DE */
-#perfpic {
-  position: absolute;
-  top: 10%;
-  left: 10vh;
-  object-fit: cover;
-  max-width: 30vh;
-  height: 30vh;
-}
-
-#ubicacion {
-  float: right;
-  width: 50vh;
   height: 100vh;
-  background-color: 586F7C;
+  /*scroll-snap-align: start;*/
+  overflow: hidden;
+  background-color: B8DBD9;
 }
 
-#argentina {
-  width: auto;
-  height: 25vh;
+.container-fluid.acercade {
+  display: flex;
+  width: 100vw;
 }
 
-iframe {
-  margin-top: 30vh;
-  /*box-shadow: 2vh -2vh 2px teal;*/
-  width: 35vh;
-  height: 35vh;
+.left {
+  flex-basis: 50%;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
 }
+
+.right {
+  flex-basis: 50%;
+  background-color: #586f7c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.profile-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text {
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.country-image {
+  width: 100%;
+  margin-bottom: 10px;
+  margin: 0%;
+}
+
+.country-image img {
+  max-width: 70%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.country-info {
+  text-align: left;
+  margin: 0%;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción 16:9 */
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN acercade */
 
 #experiencia {
-  background-color: 04724D;
+  background-color: #04724D;
   padding: 15vh 10vh;
+  /*scroll-snap-align: start;*/
 }
 
 /* CONTENIDO EXPERIENCIA */
 
 .card {
   width: auto;
-  box-shadow: 2vh -2vh 2px teal;
+  box-shadow: 0 2vh 2vh rgba(0, 141, 118, 0.5);
   background-color: F4F4F9;
   margin: 5px;
+  margin-bottom: 30px;
 }
 
 .img-fluid.exp {
@@ -140,18 +210,121 @@ iframe {
 
 /* FIN CONTENIDO EXPERIENCIA */
 
+/* ESTUDIOS */
+
 #estudios {
   background-color: F4F4F9;
+  padding: 50px 0;
 }
 
-#skills {
-  background-color: B8DBD9;
+#estudios h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+#estudios .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.estudio {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.estudio img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.estudio h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.estudio p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* FIN ESTUDIOS */
+
+.container-fluid.skills {
+  background-color: b8dbd9;
+}
+
+.progress {
+  height: 25px;
+}
+
+.progress-bar {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.bg-success {
+  background-color: #28a745;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+}
+
+/* fin skills */
 
 #proyectos {
   background-color: 586F7C;
-  height: 92.7%;
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
+}
+
+/* Estilos de la tarjeta */
+.card {
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos del botón */
+.btn-primary {
+  background-color: #fff;
+  color: #586f7c;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #586f7c;
+  color: #fff;
+}
+
+/* Ajustes de margen */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Ajuste de tamaño de imagen */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 footer {
